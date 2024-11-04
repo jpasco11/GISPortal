@@ -1,0 +1,276 @@
+html,
+body {
+  height: 100%; /* Make both html and body take up the full height of the viewport */
+  margin: 0; /* Remove default margins to avoid scrollbars */
+}
+#map {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#table-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(177, 168, 168, 0.5);
+  padding: 10px;
+  z-index: 10;
+  width: 360px;
+  max-height: 200px;
+  overflow-y: auto;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+#table-container table {
+  margin: 0;
+  width: 100%;
+  display: contents;
+}
+#table-container tr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+#table-container td {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  padding: 5px;
+}
+
+#table-container button {
+  background-color: #9d0606;
+  color: white;
+  border: none;
+  padding: 12px 70px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 350px;
+  margin-bottom: 5px;
+}
+#table-container button:hover {
+  background-color: #0056b3;
+}
+#table-container input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+#table-container::-webkit-scrollbar {
+  width: 8px;
+}
+#table-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+#table-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+#table-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+#logout-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+}
+#logout-button {
+  background-color: #9d0606;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+#logout-container2 {
+  position: absolute;
+  bottom: 400px;
+  right: 10px;
+  z-index: 100;
+}
+#logout-button2 {
+  background-color: #9d0606;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f0f0;
+}
+.login-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+.forgot-password {
+  text-align: center;
+  margin-top: 15px;
+}
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 27px;
+  font-weight: 600;
+  color: white;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #007bff, #28a745);
+  border-radius: 8px;
+}
+#extra-button-container {
+  position: absolute;
+  bottom: 400px;
+  right: 10px;
+  z-index: 100;
+}
+#extra-button-container {
+  background-color: #9d0606;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+#extra-button-container button img {
+  width: 20px;
+  height: 24px;
+  margin-right: 5px;
+  vertical-align: middle;
+  background-color: transparent;
+}
+.login-form button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  left: 200px;
+}
+.login-form button:hover {
+  background-color: #3e8e41;
+}
+.login-form button:last-child {
+  width: 100%;
+}
+#polygon-info-container {
+  width: 100%;
+  height: 565px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 11;
+  position: absolute;
+  margin-top: 520px;
+}
+#polygon-info-container h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  #polygon-info-container {
+    width: 400px;
+    margin-right: 1080px;
+    margin-bottom: 450px;
+  }
+  #map {
+    flex: 1;
+    order: 0;
+  }
+}
+#content-container {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 35px - 55px);
+}
+#polygon-info-container button {
+  background-color: #9d0606;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+#polygon-info-container button:hover {
+  background-color: #9d0606;
+}
+#polygon-info-container img {
+  display: block;
+  margin: 0 auto;
+}

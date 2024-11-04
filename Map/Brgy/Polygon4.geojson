@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "Polygon4",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Title": "PROCESS-Product Reinventing for Output Competitiveness and Enhancement of Safety and Services", "Location": "College of Technology", "Leader": "Bernard Niño Q. Membrebe Dean, College of Technology", "Assistant": null, "Members": "All Faculty of College of Technology", "DateDura": "March 14, 2022 (January 2024-December 2024)", "Link": "https://pdfupload.io/docs/2778d416" }, "geometry": { "type": "Point", "coordinates": [ 124.997050263399714, 11.239682575868764 ] } },
+{ "type": "Feature", "properties": { "Title": "CRAFTED - \"Career Resilience and Adaptive Fortification\nthrough Technical Education\"", "Location": "LGU-Babatngon, Leyte", "Leader": "Rey Roland G. Macauba", "Assistant": null, "Members": "All Faculty of College of Technology,\n                   Unemployed parents & Out-of-school Youth, Disadvantage,                   Sector of Babatngon, Leyte,                   LGU-Babatngon, Leyte,", "DateDura": "March 14, 2022 (January 2024 - December 2024)", "Link": "https://pdfupload.io/docs/974da415" }, "geometry": { "type": "Point", "coordinates": [ 124.84352141496575, 11.420635339386028 ] } }
+]
+}
